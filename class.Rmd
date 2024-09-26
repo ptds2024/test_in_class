@@ -1,0 +1,50 @@
+---
+title: "Test in class"
+author: "Samuel Orso"
+bibliography: biblio.bib
+date: "2024-09-26"
+output:
+  html_document:
+    theme: cerulean
+    highlight: espresso
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>, another possibility is to write this link as. @harrar2013taste
+
+Here I want to write a mathematical expression: $y = X\beta + \epsilon$.
+
+Here is the nice equation: $\chi = \sqrt{ \left( \frac{n_e}{n_{e,0}} - 1 \right)^2 + \left( \frac{z_f}{v_{z,0}} - 1 \right)^2 }$
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+
+```{r}
+lm(cars$speed ~ cars$dist)
+```
+
+```{r}
+knitr::kable(iris[1:5,])
+```
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=TRUE, fig.align='center'}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# References
